@@ -16,7 +16,7 @@ def index():
     title = "Image Processor App"
     call_service()
     profiler.stop()
-    output_html = profiler.output_html()
+    prin(profiler.output_text(unicode=True, color=True))	
     return template('index.tpl',data="Request completed!", title=title)
 
 if __name__ == '__main__':
